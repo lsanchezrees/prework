@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hello World</title>
+		<title>Test1</title>
 	</head>
 	<body>
 		<?php
-		echo "Hello World";
-		echo "New line";
+		$username ="Fred Smith";
+		echo $username;
+		echo "<br>";
+		$current_user = $username;
+		echo $current_user;
 		?>
 
 	</body>
