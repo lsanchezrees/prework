@@ -14,7 +14,17 @@
 		if ($y-- == 0) echo $y."<br>";
 		$count = 30;
 		echo 'this week the count is $count';
-		echo "<br>this week the count is $count";
+		echo "<br>this week the count is $count <br>";
+		echo <<<_END
+THIS IS a test
+of the emergency broadcasting system.
+_END;
+		function longdate($timestamp)
+		{
+			return date("l F jS Y", $timestamp);
+		}
+
+		echo "<br>".longdate(time());
 		?>
 
 	</body>
