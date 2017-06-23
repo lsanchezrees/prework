@@ -2,4 +2,4 @@
 $hn = 'localhost';
 $db = 'lsanchezrees';
 $un = 'lsanchezrees';
-$pw = '';
+$pw = 'abardespooflenintungmiff';
