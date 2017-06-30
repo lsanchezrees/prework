@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>chapter 14 examples</title>
+	</head>
+	<body>
+		<script>
+			document.write("a:  " + (42 > 3) + "<br>")
+			document.write("b:  " + (91 < 4) + "<br>")
+			document.write("c:  " + (8 == 2) + "<br>")
+			document.write("d:  " + (4 < 17) + "<br>")
+
+			a = 3.1415
+			b = "3.1415"
+			if (a == b) document.write("1")
+			if (a === b) document.write("2")
+
+			string = "The quick brown fox jumped over the lazy dog."
+
+			with (string)
+			{document.write("<br>The string is " + length + " characters<br>")
+			document.write("In upper case it's: " + toUpperCase())}
+
+			/*onerror = errorHandler;
+			document.writ("Welcome to this website");
+
+			function errorHandler(message, url, line)
+			{
+				out = "Sorry, an error was encountered.\n\n";
+					out += "Error: " + message + "\n";
+					out += "URL: " + url + "\n";
+					out += "Line " + line + "\n\n";
+					out += "Click OK to continue.\n\n";
+					alert(out);
+					return true;
+			}*/
+			document.write(
+				a <= 5 ?
+					"<br>a is less than or equal to 5<br>" :
+					"<br>a is greater than 5<br>"
+			)
+
+			counter=0;
+			while (counter<5)
+			{
+				document.write("Counter: " + counter + "<br>");
+				++counter;
+			}
+
+			count = 1;
+
+			do {
+				document.write(count + " times 7 is " + count * 7 + "<br>");
+			} while (++count <= 7)
+
+			for (count=1; count<=7; ++count)
+			{
+				document.write(count + " times 7 is " + count * 7 + "<br>");
+			}
+			haystack = new Array();
+			haystack[17] = "Needle";
+			for (j=0; j<20; ++j)
+			{
+				if (haystack[j] == "Needle")
+				{
+					document.write("<br> - found at location " + j);
+					break
+				}
+				else document.write(j + ", ");
+			}
+			document.write("<br>");
+
+			haystack = new Array();
+			haystack[4] = "Needle";
+			haystack[11] = "Needle";
+			haystack[17] = "Needle";
+			for (j=0; j<20; ++j)
+			{
+				if (haystack[j] == "Needle")
+				{
+					document.write("<br> - found at location " + j + "<br>");
+					continue;
+				}
+				document.write(j + ", ");
+			}
+
+			n = 3.1415;
+			i = parseInt(n);
+			document.write("<br>The value of i is " + i + "<br>");
+			document.write(parseInt(3.1415))
+
+
+
+		</script>
+	</body>
+</html>
